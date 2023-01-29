@@ -1,22 +1,26 @@
-import './index.scss';
+import "./index.scss";
 
 const questions = [
   {
-    title: 'React - это ... ?',
-    variants: ['библиотека', 'фреймворк', 'приложение'],
+    title: "React - это ... ?",
+    variants: ["библиотека", "фреймворк", "приложение"],
     correct: 0,
   },
   {
-    title: 'Компонент - это ... ',
-    variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
+    title: "Компонент - это ... ",
+    variants: [
+      "приложение",
+      "часть приложения или страницы",
+      "то, что я не знаю что такое",
+    ],
     correct: 1,
   },
   {
-    title: 'Что такое JSX?',
+    title: "Что такое JSX?",
     variants: [
-      'Это простой HTML',
-      'Это функция',
-      'Это тот же HTML, но с возможностью выполнять JS-код',
+      "Это простой HTML",
+      "Это функция",
+      "Это тот же HTML, но с возможностью выполнять JS-код",
     ],
     correct: 2,
   },
@@ -36,7 +40,7 @@ function Game() {
   return (
     <>
       <div className="progress">
-        <div style={{ width: '50%' }} className="progress__inner"></div>
+        <div style={{ width: "50%" }} className="progress__inner"></div>
       </div>
       <h1>Что такое useState?</h1>
       <ul>
